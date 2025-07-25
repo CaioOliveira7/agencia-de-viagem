@@ -1,0 +1,51 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+}
+
+.limita-container{
+    max-width: 1024px;
+}
+/*Global*/
+
+/*top*/
+.container-top{
+    width: 100%;
+    background-color: #5d15d1;
+}
+
+.container-top .limita-container{    
+    margin: auto;
+}
+
+.titulo-top{
+    display: flex;
+    padding: 13px 0 13px;
+}
+
+.titulo-top img{
+    width: 32px;
+    margin-right: 10px;
+}
+
+.titulo-top h1{
+    color: #5d15d1;
+}
+/*top*/
+
+/*Formulário*/
+.container-formulario{
+    width: 100%;
+    background-image: url(assets/imagens/bahia.jpg);
+    background-size: cover;
+}
+
+.container-formulario .limita-container{
+    display: flex;
+    margin: 50px auto;
+}
+/*Formulário*/
