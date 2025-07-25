@@ -32,7 +32,7 @@
                             <h2>Solicite um orçamento</h2>
                         </div>
                         <div class="form">
-                            <h2>Informe seus dados</h2>
+                            <h3>Informe seus dados</h3>
                                 <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/"></form>
                                     <div class="dados-pessoais">
                                         <label for="">Nome</label>
@@ -45,52 +45,68 @@
                                         <input type="tel" placeholder="(99)99999-9999" name="telefone" required>
                                     </div>
                                     <div class="data-viagem">
-                                        <label for="">Data da saída</label>
-                                        <input type="date" name="data" required>
-
-                                        <label for="">Data da volta</label>
-                                        <input type="date" name="data" required>
+                                        <div class="data-saida">
+                                            <label for="">Data da saída</label>
+                                            <input type="date" name="data" required>
+                                        </div>
+                                        <div class="data-volta">
+                                            <label for="">Data da volta</label>
+                                            <input type="date" name="data" required>
+                                        </div>
                                     </div>
                                     <div class="destino-origem">
-                                        <label for="">Origem</label>
-                                        <select name="origem" id="">
-                                            <option value="xxx">Saindo de...</option>
-                                            <option value="BG">Barra do Garças</option>
-                                            <option value="AR">Aragarças</option>
-                                            <option value="PN">Pontal do Araguaia</option>
-                                        </select>
-                                    <div class="destino-origem"></div>
-                                        <label for="">Destino</label>
-                                        <select name="destino" id="">
-                                            <option value="xxx">Indo para...</option>
-                                            <option value="PG">Porto de Galinhas</option>
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="SP">São Paulo</option>
-                                        </select>
+                                        <div class="origem">
+                                            <label for="">Origem</label>
+                                            <select name="origem" id="">
+                                                <option value="xxx">Saindo de...</option>
+                                                <option value="BG">Barra do Garças</option>
+                                                <option value="AR">Aragarças</option>
+                                                <option value="PN">Pontal do Araguaia</option>
+                                            </select>
+                                        </div>                                    
+                                        <div class="destino">
+                                            <label for="">Destino</label>
+                                            <select name="destino" id="">
+                                                <option value="xxx">Indo para...</option>
+                                                <option value="PG">Porto de Galinhas</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="SP">São Paulo</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="grupo-opcao">
+                                    <div class="quarto">
                                         <h3>Quarto com cama infantil?</h3>
-                                        <input type="radio" name="cama-infantil" value="sim" id="cama-infantil-sim">
-                                        <label for="cama-infantil-sim">Sim</label>
-                                        <input type="radio" name="cama-infantil" value="nao" id="cama-infantil-nao">
-                                        <label for="cama-infantil-nao">Não</label>
+                                        <div class="sim-nao">
+                                            <div>
+                                                <input type="radio" name="cama-infantil" value="sim" id="cama-infantil-sim">
+                                                <label for="cama-infantil-sim">Sim</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="cama-infantil" value="nao" id="cama-infantil-nao">
+                                                <label for="cama-infantil-nao">Não</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="grupo-opcao">
-                                        <h3>Necessário no local</h3>
-                                        <input type="checkbox" id="check-piscina" name="escolhas[]" value="piscina">
-                                        <label for="check-piscina">Piscina</label>
-                                    </div>
-                                    <div class="grupo-opcao">                                    
-                                        <input type="checkbox" id="check-wifi" name="escolhas[]" value="wifi">
-                                        <label for="check-wifi">Wi-Fi</label>
-                                    </div>
-                                    <div class="grupo-opcao">                                    
-                                        <input type="checkbox" id="check-garagem" name="escolhas[]" value="garagem">
-                                        <label for="check-garagem">Garagem</label>
-                                    </div>
-                                    <div class="grupo-opcao">                                    
-                                        <input type="checkbox" id="check-suite" name="escolhas[]" value="suite">
-                                        <label for="check-suite">Suíte</label>
+                                    <div class="necessidade">                                        
+                                            <h3>Necessário no local</h3>
+                                        <div class="grupo-opcao">
+                                            <div>
+                                                <input type="checkbox" id="check-piscina" name="escolhas[]" value="piscina">
+                                                <label for="check-piscina">Piscina</label>
+                                            </div>
+                                            <div>                                    
+                                                <input type="checkbox" id="check-wifi" name="escolhas[]" value="wifi">
+                                                <label for="check-wifi">Wi-Fi</label>
+                                            </div>
+                                            <div>                                    
+                                                <input type="checkbox" id="check-garagem" name="escolhas[]" value="garagem">
+                                                <label for="check-garagem">Garagem</label>
+                                            </div>
+                                            <div>                                    
+                                                <input type="checkbox" id="check-suite" name="escolhas[]" value="suite">
+                                                <label for="check-suite">Suíte</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="botao">
                                         <button type="submit">Solicitar Orçamento</button>

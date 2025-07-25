@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    background-color: #fff;
+    font-family: 'Raleway', sans-serif;    
 }
 
 .limita-container{
@@ -14,8 +13,7 @@
 
 /*top*/
 .container-top{
-    width: 100%;
-    background-color: #5d15d1;
+    width: 100%;    
 }
 
 .container-top .limita-container{    
@@ -44,8 +42,113 @@
     background-size: cover;
 }
 
-.container-formulario .limita-container{
+.container-formulario .limita-container .formulario{
+    width: 100%;
+}
+
+.container-formulario .limita-container{   
     display: flex;
-    margin: 50px auto;
+    justify-content: center;  
+    padding: 50px 0;
+}
+
+.container-formulario .limita-container{
+    margin: auto;
+}
+
+.titulo-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d15d1;
+}
+
+.titulo-form img{
+    width: 32px;
+    margin-right: 10px;
+}
+
+.form{ 
+    background-color: #fff;
+
+}
+.form h3{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.dados-pessoais{
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+}
+
+.dados-pessoais label{
+    padding-top: 10px;
+}
+
+.data-viagem{
+    display: flex;    
+}
+
+.data-saida{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+.data-volta{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+.destino-origem{
+    display: flex;
+}
+
+.origem{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+.destino{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+.quarto .sim-nao{
+    display: flex;
+}
+
+.quarto div{    
+    padding: 5px 0 0 5px;
+}
+
+.grupo-opcao{
+    display: flex;    
+}
+
+.grupo-opcao div{
+    padding: 10px;
+}
+
+.botao{
+    padding: 10px;    
+}
+
+.botao button{
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-weight: bold;
 }
 /*Formulário*/
